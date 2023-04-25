@@ -1,0 +1,14 @@
+--------------------INSEERT INSIDE A COLLECTION--------------------------
+
+
+db.getCollection('Patient').insertOne({
+    patient5: 'Jorj Medin',
+    Consulation : {
+        medecin: 'Ali Ahmed',
+        date: new Date(),
+        object: 'Checking'
+    }
+})
+
+
+name city birthdate CIN telephone

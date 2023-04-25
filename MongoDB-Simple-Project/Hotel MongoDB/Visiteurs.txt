@@ -1,0 +1,38 @@
+db.getCollection("Visiteur").insertMany([
+   {
+      _id: 1,
+      name: "Ahmed Alani",
+      birth_date: ISODate("1999-01-06T00:00:00.000Z"),
+      CIN: "L67589",
+      telephone: "+212 6830234"
+      
+   },
+   {
+    _id: 2,
+      name: "Mohamed Chaoui",
+      birth_date: ISODate("2001-09-19T00:00:00.000Z"),
+      CIN: "G5679432",
+      telephone: "+212 7903241"
+   },
+   {
+      _id: 3,
+      name: "Aya Ahmadi",
+      birth_date: ISODate("2002-01-16T00:00:00.000Z"),
+      CIN: "M678432",
+      telephone: "+212 62476843" 
+   },
+   {
+       _id: 4,
+      name: "Ousama BenAli",
+      birth_date: ISODate("2000-03-10T00:00:00.000Z"),
+      CIN: "D5684921",
+      telephone: "+212 64738234"
+   },
+   {
+       _id: 5,
+      name: "Said Mehsan",
+      birth_date: ISODate("1994-12-31T00:00:00.000Z"),
+      CIN: "L67589",
+      telephone: "+212 6830234"
+   }
+])

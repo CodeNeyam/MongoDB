@@ -1,0 +1,24 @@
+db.getCollection('Reservation').aggregate([
+   {
+      $match: {
+         chambre_id: 33,
+      }
+   },
+   {
+      $lookup: {
+         from: "Chambre",
+         localField: "chambre_id",
+         foreignField: "_id",
+         as: "chambre_data"
+      }
+   },
+   {
+      $unwind: "$chambre_data"
+   },
+   {
+      $project: {
+         _id: 0,
+         chambre_data: 1
+      }
+   }
+])

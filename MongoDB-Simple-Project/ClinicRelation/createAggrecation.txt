@@ -1,0 +1,20 @@
+db.Consoltaion.aggregate([
+   {
+      $lookup:
+         {
+            from: "patient",
+            localField: "patient",
+            foreignField: "_id",
+            as: "patient"
+         }
+   },
+   {
+      $lookup:
+         {
+            from: "doctor",
+            localField: "doctor",
+            foreignField: "_id",
+            as: "doctor"
+         }
+   }
+])

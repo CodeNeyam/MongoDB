@@ -1,0 +1,10 @@
+-------------------------------LET UPDATE------------------------------------
+
+db.Patient.updateOne(
+   { patient1: 'Alex Redo'},
+   { $set: { Consulation : {
+        medecin: 'Aziz AL',
+        date: new Date(),
+        object: 'Sick'} }
+   }
+)

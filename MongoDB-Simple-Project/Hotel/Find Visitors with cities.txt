@@ -1,0 +1,2 @@
+-----------------------------FIND VISITEURS-------------------------
+db.getCollection("Visiteur").find({$or: [{"city": "Tetouan"}, {"city": "Rabat"}]})

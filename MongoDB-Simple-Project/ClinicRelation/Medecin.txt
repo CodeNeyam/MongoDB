@@ -1,0 +1,14 @@
+db.getCollection('Medecin').insertOne({
+
+   "_id": ObjectId("5f36208b3b3e2934a2e2e838"),
+   "name": "Dr. John Smith",
+   "specialty": "Pediatrics",
+   "phone": "555-555-1212",
+   "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+   }
+}
+})

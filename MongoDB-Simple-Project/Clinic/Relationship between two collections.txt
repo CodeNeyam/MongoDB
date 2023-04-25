@@ -1,0 +1,22 @@
+1-Make a reference to the medecin collection : 
+
+db.getCollection('Patient').insertOne({
+    _id: ObjectId("123"),
+    name: "John Smith",
+    consultations: [
+    {
+      doctor: ObjectId("456"),  // Reference to medecin collection
+      date: ISODate("2022-01-01")
+    }
+  ]
+})
+
+
+2-Make the relationship
+
+db.getCollection('Medecin').insertOne({
+    _id: ObjectId("456"),
+      medecin_id: "abc123",
+      name: "Dr. Jane Doe",
+      specialty: "Pediatrics"
+})

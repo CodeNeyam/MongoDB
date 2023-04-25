@@ -1,0 +1,23 @@
+db.getCollection('Consoltaion').insertOne({
+
+   "_id": ObjectId("5f36208b3b3e2934a2e2e839"),
+   "patient": ObjectId("5f36208b3b3e2934a2e2e837"),
+   "doctor": ObjectId("5f36208b3b3e2934a2e2e838"),
+   "date": "2022-01-01",
+   "symptoms": "Fever and cough"
+})
+
+{
+    "_id" : ObjectId("5f36208b3b3e2934a2e2e839"),
+    "patient" : ObjectId("5f36208b3b3e2934a2e2e837"),
+    "doctor" : ObjectId("5f36208b3b3e2934a2e2e838"),
+    "date" : "01/01/2022",
+    "symptoms" : "Fever and cough"
+}
+{
+    "_id" : ObjectId("5f36208b3b3e2934a2e2e833"),
+    "patient" : ObjectId("5f36208b3b3e2934a2e2e832"),
+    "doctor" : ObjectId("5f36208b3b3e2934a2e2e838"),
+    "date" : "05/01/2022",
+    "symptoms" : "Heart"
+}

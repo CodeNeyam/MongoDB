@@ -1,0 +1,8 @@
+db.getCollection('Patient').insertOne({
+  
+   "_id": ObjectId("5f36208b3b3e2934a2e2e837"),
+   "name": "Jane Smith",
+   "dob": "01/01/1980",
+   "phone": "555-555-1212"
+  
+})

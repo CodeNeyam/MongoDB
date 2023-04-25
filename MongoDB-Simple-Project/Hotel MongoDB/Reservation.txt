@@ -1,0 +1,38 @@
+db.getCollection("Reservation").insertMany([
+   {
+      _id: 111,
+      visiteur_id: 1,
+      chambre_id: 22,
+      start_date: ISODate("2022-01-10T00:00:00.000Z"),
+      end_date: ISODate("2022-01-15T00:00:00.000Z")
+      
+   },
+   {
+      _id: 222,
+      visiteur_id: 2,
+      chambre_id: 33,
+      start_date: ISODate("2021-06-01T00:00:00.000Z"),
+      end_date: ISODate("2021-06-15T00:00:00.000Z")
+   },
+   {
+      _id: 333,
+      visiteur_id: 3,
+      chambre_id: 44,
+      start_date: ISODate("2021-12-30T00:00:00.000Z"),
+      end_date: ISODate("2022-01-02T00:00:00.000Z")
+   },
+   {
+      _id: 444,
+      visiteur_id: 4,
+      chambre_id: 55,
+      start_date: ISODate("2021-08-10T00:00:00.000Z"),
+      end_date: ISODate("2021-08-15T00:00:00.000Z")
+   },
+   {
+      _id: 555,
+      visiteur_id: 5,
+      chambre_id: 11,
+      start_date: ISODate("2022-01-05T00:00:00.000Z"),
+      end_date: ISODate("2022-01-15T00:00:00.000Z")
+   }
+])

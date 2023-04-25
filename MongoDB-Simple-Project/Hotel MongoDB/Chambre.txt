@@ -1,0 +1,39 @@
+db.getCollection("Chambre").insertMany([
+   {
+      _id: 11,
+      number: "5",
+      type: "Double",
+      floor: "1st",
+      price: "320$"
+      
+   },
+   {
+   _id: 22,
+      number: "10",
+      type: "Single",
+      floor: "1st",
+      price: "220$"
+   },
+   {
+    _id: 33,
+      number: "15",
+      type: "Triple",
+      floor: "2nd",
+      price: "550$"
+   },
+   {
+     _id: 44,
+      number: "20",
+      type: "VIP",
+      floor: "3rd",
+      price: "880$"
+   },
+   {
+    _id: 55,
+      number: "25",
+      type: "Double",
+      floor: "3rd",
+      price: "650$"
+   }
+])
+

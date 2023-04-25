@@ -1,0 +1,28 @@
+--------------------------MAKE IT AN ARRAY FIRST--------------------------
+
+db.Visiteur.updateOne(
+   { fname : 'Ahmed'},
+   { $set: { Reservation : [{
+        id: '77',
+        dateDb: Date(2021,11,22),
+        duree: 10, 
+        chambre: 'A10' ,
+        prix: 350}]
+        }
+   }
+)
+
+
+---------------------------NOW PUSH TO IT----------------------------------
+
+db.Visiteur.updateOne(
+   { fname : 'Ahmed'},
+   { $push: { Reservation : {
+        id: '77',
+        dateDb: Date(2021,11,22),
+        duree: 10, 
+        chambre: 'A10' ,
+        prix: 350}
+        }
+   }
+)
